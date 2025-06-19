@@ -16,10 +16,9 @@ app.use(cookieParser());
 app.use(cors());
 
 const PORT = process.env.PORT || 4001;
-const URI = process.env.MONGODB_URI;
 
 try {
-  mongoose.connect(URI);
+  mongoose.connect("mongodb+srv://aayushsurpatidar100:6gw52iRe1rFtVwIS@cluster0.s61baxq.mongodb.net/");
   console.log("Connected to MongoDB");
 } catch (error) {
   console.log(error);
